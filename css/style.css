@@ -36,8 +36,7 @@
     --color-background-autor:#ffe44d;
     --color-background-maos:#4e4e4e;
     --color-background-como-funciona:#272727;
-    --color-background-hover-ccordion:#ededed;
-    --animate-delay: 2s;
+    --color-background-hover-ccordion:#ededed;  
 }
 
 * {
@@ -64,6 +63,9 @@ body, input, button, textarea {
 .container ,.container-a-mepe,.container-publique-seu-livro,.container-meu-primeiro-livro, .container-tabs, .container-garantias{
     width: 90vw;
     max-width: 700px;
+    animation-duration: 2s;
+     
+    animation-iteration-count: 1;
 }
 /* Quando a largura for no minimo 700px aumenta o font-size: para 62.5% */
 @media(min-width:700px){
@@ -84,6 +86,11 @@ body, input, button, textarea {
 
 /**********************************************************************************************************************************/
 
+header{
+    animation-duration: 2s;
+     
+    animation-iteration-count: 1;
+}
 .bg-conteudo-converse {
     background: var(--color-top-converse-background);
 }
@@ -231,6 +238,9 @@ body, input, button, textarea {
     }
  .banner-home-top{
      margin-top: 2rem;
+     animation-duration: 2s;
+      
+     animation-iteration-count: 1;
      
  } 
  .banner-home-top .owl-carousel .owl-dots{
@@ -321,6 +331,10 @@ body, input, button, textarea {
 
  .mepe-home {
     margin: 2rem 0;
+
+    animation-duration: 2s;
+     
+    animation-iteration-count: 1;
 }
 
 .box-mepe-home {
