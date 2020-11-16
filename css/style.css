@@ -14,7 +14,7 @@
     --color-background: #FFFFFF;
     --color-banner-blog: #e8ca00;
     --color-secundary: #f4f4f7;
-    --color-font-footer: #ffffff;
+    --color-font-footer: #eff0f2;
     --color-background-footer: #39393b;
     --background-divisoria: #5c5c5c;
     --color-font-footer-editora: #959697;
@@ -76,6 +76,7 @@ body, input, button, textarea {
 .fa{
     color: var(--color-font-sub-titulo);
 }
+  
 /**********************************************************************************************************************************/
 
 /**********************************************************************************************************************************/
@@ -110,6 +111,12 @@ header{
 
 .conteudo-converse p a {
     margin-left: 1rem;
+}
+.conteudo-converse p a img:hover{
+    opacity: 0.6;
+}
+.fa-paper-plane:hover{
+    opacity: 0.6;
 }
 
 .busca-conteudo{
@@ -229,8 +236,8 @@ header{
     font-size: 1.7rem;
 }
  
- .nav-link:active, .nav-link:focus{ 
-    font-weight: 500;
+ .nav-link:active, .nav-link:focus, .nav-link:hover{  
+    font-weight: bold;
   }
   
   .navbar li a.current {
@@ -245,37 +252,97 @@ header{
  } 
  .banner-home-top .owl-carousel .owl-dots{
     display: none;
-}
+} 
  
   .banner-home-top .owl-carousel .owl-nav .owl-next{
-    margin-top: 0;
-    margin-top: 15rem;
+    margin-top: 3.1rem;
     font-size: 6rem;
     z-index: 9999;
     top: 0;
     position: absolute;
     right: 0;
-    margin-right: 10rem;
+    margin-right: 1rem;
   }
+   
 
   .banner-home-top .owl-carousel .owl-nav .owl-prev{ 
-    margin-top: 15rem;
+    margin-top: 3.1rem;
     font-size: 6rem;
     z-index: 9999;
     top: 0;
     position: absolute;
     left: 0;
-    margin-left: 10rem;
+    margin-left: 1rem;
   }
   .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
     color: #FFF;
     text-decoration: none;
 }
+.coluna-banner{
+    padding: 8px 0 0 8rem;
+}
+.linha-banner{
+    padding: 8px 0;
+    margin: 0;
+}
+  
+.owl-carousel div a , .owl-carousel div a img {
+      
+}
 
+.owl-item div a  img {
+    position: relative;
+    z-index: 9;
+}
+
+.box-banner-home { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999; 
+}
+ 
+ 
+.titulo-banner{ 
+    font-size: 2.1rem;
+    line-height: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+} 
+.box-banner-home strong{
+    margin: 0 0.6rem;
+}
+.botao-banner-home-saiba-mais{
+    width: 106px;
+    height: 30px;
+    background: var(--color-primary);
+    border: 0;
+    border-radius: 0.6rem;
+    color: var(--color-font-sub-titulo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 29px;
+     font-weight: 500;
+    font-family: "Poppins";
+}
+
+.botao-banner-home-saiba-mais:hover{ 
+    background: var(--color-primary); 
+    color: var(--color-font-sub-titulo);
+
+}
  .banner-meu-primeiro-livro-home-fixo{
      width:100%;
-     height:512px;
+     height:380px;
      background: url(../images/banner-2-conteudo.png);
      background-repeat: no-repeat;
      background-position: center center;
@@ -373,8 +440,7 @@ header{
 .box-texto-mepe-home p {
     color: var(--color-font-texto); 
     padding: 0; 
-    font-size: 18px; 
-    font-weight: 500;
+    font-size: 1.6rem;  
     font-family: "Poppins";
 }
 .botao-mepe-home {
@@ -420,13 +486,7 @@ header{
     justify-content: center;
     align-items: center;
 }
- 
-.card-conteudo img {
-    width: 290px;
-    height: 282px;
-    position: relative; 
-    margin-top: 4.5rem;
-}
+  
 .box-link-publique-seu-livro-home{
     display: flex;
     flex-direction: column;
@@ -518,6 +578,14 @@ header{
 
 .publique-seu-livro-home {
     z-index: 1;
+}
+.livro-inclinado,
+.box-livro-padrao-carousel{
+    transition: transform .8s; 
+}
+
+.livro-inclinado:hover, .box-livro-padrao-carousel:hover{
+    transform: scale(1.5);
 }
 
 .circulo-livro-inclinado, .circulo-livro {
@@ -634,11 +702,7 @@ header{
     margin-top: 10rem; 
     padding: 2rem; 
 
-}
-.card-autores:hover{ 
-    opacity: 0.8;
-
-}
+} 
 
 .card-autor{
     width:268px;
@@ -909,6 +973,10 @@ header{
         border-radius: 0.6rem;
         padding-left: 1.4rem;
     }
+
+#exampleInputEmail1::placeholder {
+    color: #d5d5d8;
+} 
     .botao-enviar {
         width: 60px;
         height: 22px;
@@ -1181,15 +1249,7 @@ header{
     display:flex;
     flex-direction: column;
     justify-content:center;
-} 
-.a-mepe-card-publique-seu-livro:hover{
-    opacity: 0.8;
-     
-}
-.a-mepe-card-meu-primeiro-livro:hover{
-    opacity: 0.8;
-     
-}
+}  
 
 .a-mepe-card-publique-seu-livro img{
      width:290px;
@@ -1228,10 +1288,6 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.box-card-meu-primeiro-livro:hover{ 
-    opacity: 0.8;
-    
 } 
 .box-meu-primeiro-livro h2{  
     text-align: center;
@@ -1798,10 +1854,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.card-aprenda-escrever:hover{
-   opacity: 0.8;
-}
+} 
 .card-titulo-aprenda-escrever{
     display: flex;
     flex-direction: column;
@@ -2308,8 +2361,94 @@ header{
     margin-bottom: 3.7rem;
     margin-top: 6rem;
 }
+.conheca-nossos-livros{
+    margin: 10rem 0;
+}
 
-.carousel-caption-comentarios {}
+.conheca-nossos-livros .container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.box-veja-nossa-loja{
+    max-width:602px;
+    min-height:240px; 
+    border-radius: 0.6rem;
+    background: var(--color-primary);
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    padding: 4rem;
+}  
+.box-titulo-veja-nossa-loja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-veja-nossa-loja h4 {
+    font-size: 15px;
+     line-height: 34px;
+     color: var(--color-font-sub-titulo);
+     font-weight: 500;
+     font-family: "Poppins";
+     text-align: center ; 
+    opacity: 0.5; 
+}
+.box-veja-nossa-loja h5 {
+    font-size: 38px;
+    line-height: 34px;
+     color: var(--color-font-sub-titulo);
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center ;
+    padding: 2rem 0;
+}
+
+.botao-veja-nossa-loja{
+    width:282px;
+    height: 36px;
+    background: var(--color-background);
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    color: var(--color-font-botao);
+    z-index: 99999;
+    font-size: 1.6rem; 
+    margin-bottom: 4rem;
+}
+
+.botao-veja-nossa-loja:hover{
+    background: var(--color-background);
+    color: var(--color-primary);
+   
+}
+.botao-veja-nossa-loja strong {
+    margin: 0 0.6rem;
+}
+ .livro-inclinado-vejanossa-loja{
+    position: relative;
+    z-index: 9999;
+    margin-bottom: -25.4rem;
+    margin-left: -11rem;
+    transform: rotate(-25deg);
+
+     transform: rotate(-25deg);
+
+ }
+ .livro-padrao-vejanossa-loja {
+     z-index: 9;
+     position: relative;
+ }
 
 sup {
     margin-top: 1rem;
@@ -3025,6 +3164,7 @@ button.close {
 
 /**********************************************************************************************************************************/
 @media (min-width:1100px){
+    
     .container{
         max-width: 1070px; 
         padding: 0; 
@@ -3094,7 +3234,48 @@ button.close {
  .banner-home-top{ 
     margin-top: 1rem;
 }
+ 
+
+.box-banner-home {
+    width: 100%;
+    min-height: 324px;   
+} 
+.titulo-banner{
+    font-size: 111px;
+    line-height: 9.8rem;
+}
+
+.botao-banner-home-saiba-mais{
+    width:184px;
+    height:36px; 
+}
+
+  .banner-home-top .  .owl-nav .owl-next{ 
+    margin-top: 10rem; 
+    margin-right: 10rem;
+  }
+
+  .banner-home-top .owl-carousel .owl-nav .owl-prev{ 
+    margin-top: 10rem; 
+    margin-left: 10rem;
+  } 
   
+.owl-carousel div img{
+    height:521px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: red;
+}
+
+ 
+.banner-home-top .owl-carousel .owl-nav .owl-next{ 
+    margin-top: 20rem; 
+  }
+
+  .banner-home-top .owl-carousel .owl-nav .owl-prev{ 
+    margin-top: 20rem; 
+  }
 
 .box-mepe-home  {
     width: 608px;
@@ -3129,29 +3310,38 @@ button.close {
 
 .card-conteudo{
     width:602px;
-    height: 239px;  
+    height: 240px;  
     display: flex;
     justify-content: space-around;
     align-items: self-start;
     margin-right: 8rem;
 }
+ 
 
-.card-conteudo:hover{
-    opacity: 0.5;
+.card-conteudo .livro-padrao {
+    width:177px;
+    height:230px;
+    position: relative;
+    right: 0; 
+    margin-top: -22rem;
+    margin-left: 42.7rem;
+    z-index: 9;
+    border-radius: 0 0 1.1rem 0;
+
 }
 
-
-.card-conteudo img {
-    width:290px;
-    height:282px;
+.card-conteudo .livro-inclinado-publique {
+    width: 206px;
+    height: 280px;
     position: relative;
     right: 0;
     margin-top: -20.6rem;
-    margin-left: 31rem;
-    z-index: 9;
-}
+    margin-left: 33.6rem;
+    z-index: 9999;
+    transform: rotate(-25deg);
+ }
 
-.conheca-nossos-livros .container .box-card .card-conteudo img {
+.conheca-nossos-livros .container .box-card .card-conteudo {
     width: 290px;
     height: 282px;
     position: relative;
@@ -3162,6 +3352,89 @@ button.close {
 }
 
 
+.conheca-nossos-livros .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.box-veja-nossa-loja{
+   width:602px;
+   height:240px; 
+   border-radius: 0.6rem;
+   background: var(--color-primary);
+   border: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   margin-bottom: 8rem;
+   padding: 4rem;
+}  
+.box-titulo-veja-nossa-loja{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.box-veja-nossa-loja h4 {
+   font-size: 15px;
+    line-height: 34px;
+    color: var(--color-font-sub-titulo);
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: center ; 
+   opacity: 0.5; 
+}
+.box-veja-nossa-loja h5 {
+   font-size: 38px;
+   line-height: 34px;
+    color: var(--color-font-sub-titulo);
+   font-weight: 700;
+   font-family: "Poppins";
+   text-align: left;
+   padding: 0 0 1rem 0;
+}
+
+.botao-veja-nossa-loja{
+   width:282px;
+   height: 36px;
+   background: var(--color-background);
+   border-radius: 0.6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0;
+   color: var(--color-font-botao);
+   z-index: 99999;
+   font-size: 1.6rem; 
+   margin-bottom: 4rem;
+}
+ 
+.livro-inclinado-vejanossa-loja{
+        width: 187px;
+        height: 280px;
+        position: relative;
+        z-index: 9999;
+        margin-bottom: 0px;
+        margin-left: 1.2rem;
+        margin-right: -13.3rem;
+        margin-top: -8.8rem; 
+        transform: rotate(-40deg);
+}
+
+.livro-padrao-vejanossa-loja {
+    width: 177px;
+    height: 230px;
+    z-index: 9;
+    position: relative;
+    margin-top: -2.9rem;
+    margin-left: 3.9rem;
+    border-radius: 0 0 1.2rem 0;
+}
 .box-link-publique-seu-livro-home{ 
     display: flex;
     flex-direction: column;
@@ -3170,15 +3443,16 @@ button.close {
     padding: 0 0 0 3rem;
 }
 
-.banner-box-meu-primeiro-livro-home{
-    width: 614px; 
-    margin-top: 6.3rem;
-    margin-left: 56.5rem; 
-    padding-right: 17rem;
+.banner-box-meu-primeiro-livro-home{ 
+    width: 614px;
+    margin-top: 3.5rem;
+    margin-left: 55.5rem;
+    padding-right: 19rem;
 }
 .banner-box-meu-primeiro-livro-home h2{  
-    font-size: 9rem;
-    line-height: 8rem;
+    
+    font-size: 7rem;
+    line-height: 6rem;
  } 
  
 
@@ -3444,10 +3718,6 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.box-card-meu-primeiro-livro:hover{ 
-    opacity: 0.8;
-    
 } 
 .box-meu-primeiro-livro h2{  
     text-align: left;
@@ -3524,10 +3794,7 @@ footer .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.box-card-meu-primeiro-livro:hover{ 
-    opacity: 0.8; 
-}  
+} 
 .a-mepe-card-publique-seu-livro img { 
     margin-top: -4.3rem; 
     margin-right: -0.1rem;
@@ -3563,7 +3830,7 @@ footer .container {
     margin-top: 4.5rem;
     margin-right: 34rem;
 } 
-.conheca-vantagens .box-card .card-conteudo img{ 
+.conheca-vantagens .box-card { 
     clear: both;
     margin-top: -24.1rem;
 }
@@ -3679,10 +3946,7 @@ footer .container {
     display: flex;
     justify-content: space-between;
 }
-
-.box-card-lancamento:hover{
-     opacity: 0.8;
-}
+ 
 .card-lancamento{
     width:602px;
     height:240px; 
@@ -3702,10 +3966,7 @@ footer .container {
     display:flex;
     justify-content: space-between;
 }
-
-.box-card-publique-meu-primeiro-livro:hover{
-    opacity: 0.8;
-}
+ 
 .botao-lancamento { 
     margin: 0 0 0 4.6rem;
 }
@@ -4120,3 +4381,4 @@ Página interna BLOG
 }
 
 } 
+ 
