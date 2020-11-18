@@ -7,13 +7,19 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"> 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">  
+     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">   
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" />  
+    <link rel="stylesheet" href="css/animate.min.css" />  
+    <link rel="stylesheet"  href="https://vjs.zencdn.net/7.10.2/video-js.css" /> 
+    <link rel="stylesheet" href="css/style.css"> 
+
 </head>
 
 <body>
-<header>
+<header class=" animated wow animate__flipInX">
 
     <!--conteudo-converse-->
     <div class="bg-conteudo-converse">
@@ -85,12 +91,13 @@
             </ul>
         </div>
     </div>
-</nav><!-- navbar-->
+</nav><!-- navbar--> 
+</header>
 
     <!-- main-->
     <div class="main">
         <!--banner-publique-seu-livro-->
-        <div class="banner-meu-primeiro-livro">
+        <div class="banner-meu-primeiro-livro animated wow animate__flipInX"> 
               <div class="bg-meu-primeiro-livro">
                    <div class="container">
                       <h1>Meu <br> primeiro livro</h1>
@@ -99,7 +106,7 @@
         </div>
         <!--banner-publique-seu-livro-->
         <!--Breadcrumb-->
-        <div class="breadcrumb container">
+        <div class="breadcrumb container-meu-primeiro-livro animated wow animate__flipInY">
             <ul class="breadcrumb-item">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Meu Primeiro livro</a></li>
@@ -109,10 +116,10 @@
 
     
         <!--card-aprenda-escrever-meu-primeiro-livro-->
-       <div class="card-aprenda-escrever-meu-primeiro-livro">
+       <div class="card-aprenda-escrever-meu-primeiro-livro animated wow animate__fadeInBottomLeft">
             <!--aprenda-escrever-->
                 <div class="aprenda-escrever">
-                    <div class="container">
+                    <div class="container-meu-primeiro-livro ">
                     <div class="card-aprenda-escrever"> 
                         <div class="card-titulo-aprenda-escrever">
                             <h1>Aprenda a escrever seu próprio livro!</h1>
@@ -130,7 +137,7 @@
       <section class="maos-meu-primeiro-livro">
             <!--box-maos-coracao-->
             <div class="container">
-                <div class="box-maos-coracao">
+                <div class="box-maos-coracao animated wow animate__fadeInBottomLeft"> 
                     <div class="icone-maos-coracao">
                         <div class="box-imagem-maos">
                             <div class="box-maos-hover">
@@ -193,7 +200,7 @@
     
        
      
-      <section class="carousel-publique-seu-primeiro-livro">
+      <section class="carousel-publique-seu-primeiro-livro animated wow animate__fadeInBottomRight">
 
     <!--banner-carousel-->
     <div class="banner-carousel">
@@ -213,7 +220,15 @@
                                 <h3>Realizados</h3>
                             </div>
                             <div class="box-imagem-publique col-12 col-sm-8">
-                                <img src="images/carousel-publique.png" class="d-block w-100" alt="...">
+                                <div class="box-imagem-video">
+                                    <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                        <source src="video.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                            <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                        </p>
+                                    </video>
+                                </div>
                             </div>
                             <div class="carousel-caption-publique col-12 col-sm-4">
                             <h4>Merry Shwlly</h4>
@@ -231,7 +246,15 @@
                                 <h3>Realizados</h3>
                             </div>
                             <div class="box-imagem-publique col-12 col-sm-8">
-                                <img src="images/carousel-publique.png" class="d-block w-100" alt="...">
+                                <div class="box-imagem-video">
+                                    <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                        <source src="video.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                            <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                        </p>
+                                    </video>
+                                </div>
                             </div>
                             <div class="carousel-caption-publique col-12 col-sm-4">
                             <h4>Merry Shwlly</h4>
@@ -249,7 +272,15 @@
                                 <h3>Realizados</h3>
                             </div>
                             <div class="box-imagem-publique col-12 col-sm-8">
-                                <img src="images/carousel-publique.png" class="d-block w-100" alt="...">
+                                <div class="box-imagem-video">
+                                    <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                        <source src="video.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                            <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                        </p>
+                                    </video>
+                                </div>
                             </div>
                             <div class="carousel-caption-publique col-12 col-sm-4">
                             <h4>Merry Shwlly</h4>
@@ -267,7 +298,15 @@
                                 <h3>Realizados</h3>
                             </div>
                             <div class="box-imagem-publique col-12 col-sm-8">
-                                <img src="images/carousel-publique.png" class="d-block w-100" alt="...">
+                                <div class="box-imagem-video">
+                                    <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                        <source src="video.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                            <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                        </p>
+                                    </video>
+                                </div>
                             </div>
                             <div class="carousel-caption-publique col-12 col-sm-4">
                             <h4>Merry Shwlly</h4>
@@ -296,7 +335,7 @@
     </section> 
     
         <!--banner-centro-->
-        <div class="bg-banner-centro"> 
+        <div class="bg-banner-centro animated wow animate__backInUp">
             <div class="container">
                 <div class="box-banner-meu-primeiro-livro">
                     <div class="box-texto-meu-primeiro-livro">
@@ -311,12 +350,12 @@
         </div>
         <!--banner-centro--> 
 
-       <div class="accordion-meu-primeiro-livro">
+       <div class="accordion-meu-primeiro-livro animated wow animate__backOutLeft">
                <!--box-accordion-->
             <section class="p-3 p-lg-5 d-flex flex-column">
                 <div class="my-auto">
 
-                    <div id="accordion" class="container-meu-primeiro-livro" role="tablist" aria-multiselectable="true">
+                    <div id="accordion" role="tablist" aria-multiselectable="true">
 
                     <!-- Accordion Item 1 -->
                     <div class="card">
@@ -517,17 +556,17 @@
 
        </div>
 
-    <section class="container">
+    <section class="container animated wow animate__zoomIn">
         <a href="#" class="btn btn-primary botao-termos">Termos de <strong>política e privacidade</strong><img src="images/icone-download.png" alt=""></a>
     </section>
 
      <!--card publique seu livro-->
-     <section class="container-publique-seu-livro">
+     <section class="container-publique-seu-livro animated wow animate__bounceIn">
         
         <div class="card-publique-seu-livro">
             
             <!--box card-->
-            <div class="card-lancamento">
+            <div class="card-lancamento animated wow animate__fadeInDownBig">
                <div class="box-card-lancamento">
                     <div class="card-lancamento-conteudo">
                         <h2>Lançamentos</h2>
@@ -539,7 +578,7 @@
             <!--card-lancamento-->
         
             <!--box-card-meu-primeiro-livro-->
-                <div class="card-publique-meu-primeiro-livro">
+                <div class="card-publique-meu-primeiro-livro animated wow animate__bounceInLeft">
                 <div class="box-card-publique-meu-primeiro-livro">
                         <div class="card-publique-meu-primeiro-livro-conteudo">
                             <h2>Meu <br />primeiro <br />livro </h2>
@@ -558,12 +597,11 @@
 
     </div>
     <!-- main-->
-    <!-- Footer -->
 <!-- Footer -->
 <footer>
     <div class="container">
         <!-- box-editora-->
-        <div class="box-editora">
+        <div class="box-editora animated wow    animate__fadeInBottomRight">
             <img src="images/logo-footer.png" alt="cabeça pensante - Editora MEPE">
             <p>
             Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
@@ -580,7 +618,7 @@
         <!-- box-editora-->
 
         <!--box-menu-->
-        <div class="box-menu">
+        <div class="box-menu animated wow    animate__fadeInDown">
             <h4>Menu</h4>
             <ul>
                 <li>
@@ -606,7 +644,7 @@
         <!--box-menu-->
 
         <!--box-contato-->
-        <div class="box-contato">
+        <div class="box-contato animated wow    animate__fadeInBottomRight">
             <h4>Entre em contato</h4>
             <ul>
                 <li> <img src="images/localizacao.png" alt="localizacao"> 123 Landon Bridge Street London</li>
@@ -630,37 +668,45 @@
         <!--box-contato-->
 
         <!-- box-mapa-->
-        <div class="box-mapa">
-            <img src="images/mapa.png" alt="endereço">
+        <div class="box-mapa animated wow    animate__fadeInBottomRight">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7783476763407!2d-0.16339908393480077!3d51.498934879633765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053ed5bcf677%3A0xb2e004a325459022!2sLandon%20Pl%2C%20Knightsbridge%2C%20London%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1605549950462!5m2!1spt-BR!2sbr"
+             width="262" 
+             height="236" 
+             frameborder="0" 
+             style="border:0;"
+              allowfullscreen="" 
+              aria-hidden="false"
+             tabindex="0">
+            </iframe>
         </div>
         <!-- box-mapa-->
     </div>
 
     <div class="divisoria"></div>
 </footer>
-<!-- Footer --> 
-<!-- MODAL BAIXE NOSSO EBOOK -->
-<!-- Large modal -->
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+<!-- Footer -->
+
+ <!-- MODAL BAIXE NOSSO EBOOK -->
+<!-- Large modal --> 
+<div class="modal fade bd-example-modal-lg animated wow    animate__bounceIn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span class="botao-modal" aria-hidden="true">&times;</span>
             </button>
-            <h2>Baixe <br>nosso<br /> ebook</h2>
+            <h2>Baixe <br >nosso<br /> ebook</h2>
             <form action="#" method="POST">
                 <div class="row">
                     <div class="col">
-                        <div class="form-group">
+                        <div class="form-group"> 
                             <input type="text" class="form-control input-modal" id="exampleInputnome" aria-describedby="nome bnyhjg
-                            " placeholder="Nome">
+                            " placeholder="Nome"> 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-group">
-                            <input type="email" class="form-control input-modal" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email">
+                        <div class="form-group"> 
+                            <input type="email" class="form-control input-modal" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"> 
                         </div>
                     </div>
                 </div>
@@ -670,13 +716,29 @@
     </div>
 </div>
 <!-- MODAL BAIXE NOSSO EBOOK -->
-
-</header>
     
         <script src="js/jquery-3.2.1.slim.min.js"></script> 
         <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>  
+        <script src="dist/owl.carousel.min.js"></script> 
+        <script src="js/slick.min.js"></script>
+        <script src="js/carousel.js"></script> 
+        <script src="js/autores.js"></script>
+        <script src="js/livros.js"></script>
+        <script src="js/posts.js"></script> 
         <script src="js/main.js"></script>
-        
+        <script src="js/wow.min.js" 
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" 
+        crossorigin="anonymous">
+        </script>  
+         <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+         <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+         <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+         <script src="js/video.js"></script>
+        <script>
+
+           new WOW().init();
+
+        </script>
 </body>
 </html>   

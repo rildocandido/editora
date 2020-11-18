@@ -40,7 +40,10 @@
     margin-bottom: -35px;
 }
 
-.carousel-nossos-autores .slick-prev, .carousel-nossos-autores .slick-next, .carousel-nossos-livros .slick-prev, .carousel-nossos-livros .slick-next {
+.carousel-nossos-autores .slick-prev, 
+.carousel-nossos-autores .slick-next, 
+.carousel-nossos-livros .slick-prev, 
+.carousel-nossos-livros .slick-next {
     display: none!important;
 }
 

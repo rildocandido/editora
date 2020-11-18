@@ -11,56 +11,58 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">   
     <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" /> 
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" />  
+    <link rel="stylesheet" href="css/animate.min.css" />  
+    <link rel="stylesheet"  href="https://vjs.zencdn.net/7.10.2/video-js.css" /> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 </head>
 
 <body>
-<header>
 
-    <!--conteudo-converse-->
-    <div class="bg-conteudo-converse">
-        <div class="container">
-            <div class="conteudo-converse">
-                <p>
-                    Converse com a MEPE <a href="#"><img src="images/whats-top.png" alt="whats"></a> <a href="#"><i
-                            class="fa fa-paper-plane"></i></a>
-                </p>
-            </div>
-        </div> 
-    </div> 
-    <!--conteudo-converse-->
+    <header class=" animated wow animate__flipInX">
 
-
-   
-    <div class="container">  
-      <!-- conteudo-top -->
-       <div class="conteudo-top">
-            <div class="logo">
-                <img src="images/logo.png" alt="cabeça pensante - Editora MEPE" >
-            </div>
-            <div class="busca">
-            <form class="form-inline" method="get" action="#">
-                <div class="input-group">
-                    <input class="form-control busca-conteudo" type="search" placeholder="Busca" aria-label="Search">
-                    <div class="input-group-append">
-                        <div class="input-group-text"><i class="fa fa-angle-down"></i> | <i class="fa fa-search"></i></div>
-                    </div>
+        <!--conteudo-converse-->
+        <div class="bg-conteudo-converse">
+            <div class="container">
+                <div class="conteudo-converse">
+                    <p>
+                        Converse com a MEPE <a href="#"><img src="images/whats-top.png" alt="whats"></a> <a href="#"><i
+                                class="fa fa-paper-plane"></i></a>
+                    </p>
                 </div>
-            </form> 
-            </div>
-            <div class="botao-container">
-                <a href="#" class="btn btn-primary botao-baixe-nosso-ebook" data-toggle="modal" data-target=".bd-example-modal-lg">Baixe nosso <strong> Ebook </strong></a>
-                <a href="#" class="btn btn-primary botao-visite-nossa-loja">Visite a <strong> nossa loja </strong> <img src="images/sacola.png" alt=""></a>
             </div> 
-       </div>
-        <!-- conteudo-top --> 
-     </div>  
-
-
-    <!-- navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        </div> 
+        <!--conteudo-converse-->
+    
+    
+       
+        <div class="container">  
+          <!-- conteudo-top -->
+           <div class="conteudo-top">
+                <div class="logo">
+                    <img src="images/logo.png" alt="cabeça pensante - Editora MEPE" >
+                </div>
+                <div class="busca">
+                <form class="form-inline" method="get" action="#">
+                    <div class="input-group">
+                        <input class="form-control busca-conteudo" type="search" placeholder="Busca" aria-label="Search">
+                        <div class="input-group-append">
+                            <div class="input-group-text"><i class="fa fa-angle-down"></i> | <i class="fa fa-search"></i></div>
+                        </div>
+                    </div>
+                </form> 
+                </div>
+                <div class="botao-container">
+                    <a href="#" class="btn btn-primary botao-baixe-nosso-ebook" data-toggle="modal" data-target=".bd-example-modal-lg">Baixe nosso <strong> Ebook </strong></a>
+                    <a href="#" class="btn btn-primary botao-visite-nossa-loja">Visite a <strong> nossa loja </strong> <img src="images/sacola.png" alt=""></a>
+                </div> 
+           </div>
+            <!-- conteudo-top --> 
+         </div>  
+    
+     <!-- navbar-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
         <div class="container">
             <img src="images/home.png" alt="casinha">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -90,28 +92,27 @@
                 </ul>
             </div>
         </div>
-    </nav><!-- navbar-->
-
-</header>
+    </nav><!-- navbar--> 
+    </header>
 
     <!-- main-->
     <div class="main">
         <!--banner-lancamento-->
-        <div class="bg-banner-lancamento">
-                <div class="container">
+        <div class="bg-banner-lancamento animate animated wow  animate__rotateInDownLeft">
+                <div class="container-lancamentos">
                     <h1>Lançamentos</h1>
                 </div>
         </div>
         <!--banner-lancamento-->
         <!--Breadcrumb-->
-        <div class="breadcrumb container">
+        <div class="breadcrumb container-lancamentos animate animated wow  animate__fadeInBottomLeft">
             <ul class="breadcrumb-item">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Lançamentos</a></li>
             </ul>
         </div>
         <!--Breadcrumb-->
-        <div class="container">
+        <div class="container-lancamentos animate animated wow  animate__flipInX">
           <!--box-lancamento-texto--> 
             <div class="box-lancamento-texto">
                 <p>
@@ -143,7 +144,7 @@
        <section class="container">
 
             <!-- box-tabs-->
-            <div class="box-tabs">
+            <div class="box-tabs  animate animated wow  animate__fadeInBottomRight">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#conteudo1" role="tab" aria-controls="conteudo"
@@ -167,7 +168,15 @@
                         <div class="box-tab-pane">
                             <div class="row">
                                 <div class="box-imagem-lancamento col-8">
-                                    <img src="images/carousel-publique.png" class="d-block w-100" alt="...">
+                                       <div class="box-imagem-lancamento-video">
+                                            <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                                <source src="video.mp4" type="video/mp4" />
+                                                <p class="vjs-no-js">
+                                                    To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                                    <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                                </p>
+                                            </video> 
+                                       </div>
                                 </div>
                                 <div class="carousel-caption-lancamento col-4">
                                     <h4>Merry Shwlly</h4>
@@ -186,16 +195,94 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="conteudo2" role="tabpanel" aria-labelledby="profile-tab">
-                        Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
-                        que desenvolve, produz e vende automóveis elétricos de alto desempenho,
+                         <div class="box-tab-pane">
+                            <div class="row">
+                                <div class="box-imagem-lancamento col-8">
+                                    <div class="box-imagem-lancamento-video">
+                                        <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                            <source src="video.mp4" type="video/mp4" />
+                                            <p class="vjs-no-js">
+                                                To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                                <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                            </p>
+                                        </video> 
+                                   </div>
+                                </div>
+                                <div class="carousel-caption-lancamento col-4">
+                                    <h4>Merry Shwlly</h4>
+                                    <h5>frankenstein</h5>
+                                    <p>Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento
+                                        de energia norte americana,
+                                        que desenvolve, produz e vende automóveis elétricos de alto desempenho, componentes para
+                                        motores e transmissões para
+                                        veículos</p>
+                                        <a href="#" class="btn btn-primary visite-loja">Visite a <strong> Loja Online </strong></a>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="conteudo3" role="tabpanel" aria-labelledby="contact-tab">
-                        Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
-                        que desenvolve, produz e vende automóveis elétricos de alto desempenho,
+                         <div class="box-tab-pane">
+                            <div class="row">
+                                <div class="box-imagem-lancamento col-8">
+                                    <div class="box-imagem-lancamento-video">
+                                        <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                            <source src="video.mp4" type="video/mp4" />
+                                            <p class="vjs-no-js">
+                                                To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                                <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                            </p>
+                                        </video> 
+                                   </div>
+                                </div>
+                                <div class="carousel-caption-lancamento col-4">
+                                    <h4>Merry Shwlly</h4>
+                                    <h5>frankenstein</h5>
+                                    <p>Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento
+                                        de energia norte americana,
+                                        que desenvolve, produz e vende automóveis elétricos de alto desempenho, componentes para
+                                        motores e transmissões para
+                                        veículos</p>
+                                        <a href="#" class="btn btn-primary visite-loja">Visite a <strong> Loja Online </strong></a>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="conteudo4" role="tabpanel" aria-labelledby="contact-tab">
-                        Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
-                        que desenvolve, produz e vende automóveis elétricos de alto desempenho,
+                        <div class="box-tab-pane">
+                            <div class="row">
+                                <div class="box-imagem-lancamento col-8">
+                                    <div class="box-imagem-lancamento-video">
+                                        <video id="videoPlayer" class="video-js vjs-big-play-centered" width="612" height="379" muted poster="images/video-a-mepe.png" data-setup="{}">
+                                            <source src="video.mp4" type="video/mp4" />
+                                            <p class="vjs-no-js">
+                                                To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                                                <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                                            </p>
+                                        </video> 
+                                   </div>
+                                </div>
+                                <div class="carousel-caption-lancamento col-4">
+                                    <h4>Merry Shwlly</h4>
+                                    <h5>frankenstein</h5>
+                                    <p>Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento
+                                        de energia norte americana,
+                                        que desenvolve, produz e vende automóveis elétricos de alto desempenho, componentes para
+                                        motores e transmissões para
+                                        veículos</p>
+                                        <a href="#" class="btn btn-primary visite-loja">Visite a <strong> Loja Online </strong></a>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,7 +290,7 @@
        </section>
 
         <!--box-carousel-lancamento-->
-        <div class="box-carousel-lancamento container">
+        <div class="box-carousel-lancamento container  animate animated wow  animate__fadeIn">
 
             <div id="carouselExampleCaptionsLancamentos" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -321,7 +408,7 @@
         </div>
         <!--box-carousel-lancamento-->
         <!--como funciona--> 
-        <div class="box-como-funciona">
+        <div class="box-como-funciona  animate animated wow  animate__fadeInBottomLeft">
             <div class="container">
                 <div class="card-como-funciona">
                     <h2>Como funciona?</h2>
@@ -334,7 +421,7 @@
 
  
         <!--box-texto-lancamento-->
-        <div class="box-texto-lancamento">
+        <div class="box-texto-lancamento  animated wow animate__flipInX">
             <div class="box-lancamento-maos">
                 <img src="images/maos-lancamentos.png" alt="">
                  <h2>frankenstein</h2>
@@ -375,7 +462,7 @@
                  </p>
             </div>
         </div>
-        <div class="box-texto-lancamento">
+        <div class="box-texto-lancamento  animated wow animate__flipInX">
             <div class="box-lancamento-maos">
                 <img src="images/maos-lancamentos.png" alt="">
                 <h2>frankenstein</h2>
@@ -421,7 +508,7 @@
         </div>
         <!--box-texto-lancamento--> 
 
-        <div class="container-garantias">
+        <div class="container-garantias  animate animated wow  animate__fadeIn">
               <!--garantias-->
                  <div class="row">
                      <div class="col-6">
@@ -447,7 +534,7 @@
             </div>
             <!--garantias-->  
 
-       <div class="container">
+       <div class="container  animate animated wow  animate__fadeInBottomLeft">
         <!--box-maos-simples-->
         <div class="maos-simples">
             <div class="box-maos-simples">
@@ -491,14 +578,14 @@
        </div> 
 
          <!-- ultimos-posts -->
-         <div class="ultimos-comentarios">
+         <div class="ultimos-comentarios-lancamentos  animate animated wow  animate__fadeInBottomRight">
             <h3>Ultímos</h3>
             <hr>
             <a href="#">Comentários</a>
 
             <!--box-formulário-lancamento-->
-            <div class="box-formulario-lancamento container">
-                <form class="form-cometarios-lancamento fale-conosco-form" method="post" action="#"> 
+            <div class="box-formulario-lancamento container  animate animated wow  animate__fadeInBottomLeft">
+                <form class="form-cometarios-lancamento" method="post" action="#"> 
                     <div class="row">
                         <div class="col">
                             <div class="icone-usuario-comentario">
@@ -512,7 +599,7 @@
             <!--box-formulário-lancamento-->
 
             <!--galeria-comentarios-->
-            <div class="galeria-cometarios">
+            <div class="galeria-cometarios  animate animated wow  animate__fadeInBottomRight">
 
                 <div id="carouselExampleCaptionsCometarios" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -571,12 +658,12 @@
 
     </div>
     <!-- main-->
-    <!-- Footer -->
+  
 <!-- Footer -->
 <footer>
     <div class="container">
         <!-- box-editora-->
-        <div class="box-editora">
+        <div class="box-editora animated wow    animate__fadeInBottomRight">
             <img src="images/logo-footer.png" alt="cabeça pensante - Editora MEPE">
             <p>
             Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
@@ -593,7 +680,7 @@
         <!-- box-editora-->
 
         <!--box-menu-->
-        <div class="box-menu">
+        <div class="box-menu animated wow    animate__fadeInDown">
             <h4>Menu</h4>
             <ul>
                 <li>
@@ -619,7 +706,7 @@
         <!--box-menu-->
 
         <!--box-contato-->
-        <div class="box-contato">
+        <div class="box-contato animated wow    animate__fadeInBottomRight">
             <h4>Entre em contato</h4>
             <ul>
                 <li> <img src="images/localizacao.png" alt="localizacao"> 123 Landon Bridge Street London</li>
@@ -643,8 +730,16 @@
         <!--box-contato-->
 
         <!-- box-mapa-->
-        <div class="box-mapa">
-            <img src="images/mapa.png" alt="endereço">
+        <div class="box-mapa animated wow    animate__fadeInBottomRight">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7783476763407!2d-0.16339908393480077!3d51.498934879633765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053ed5bcf677%3A0xb2e004a325459022!2sLandon%20Pl%2C%20Knightsbridge%2C%20London%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1605549950462!5m2!1spt-BR!2sbr"
+             width="262" 
+             height="236" 
+             frameborder="0" 
+             style="border:0;"
+              allowfullscreen="" 
+              aria-hidden="false"
+             tabindex="0">
+            </iframe>
         </div>
         <!-- box-mapa-->
     </div>
@@ -653,28 +748,27 @@
 </footer>
 <!-- Footer -->
 
-<!-- MODAL BAIXE NOSSO EBOOK -->
-<!-- Large modal -->
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+ <!-- MODAL BAIXE NOSSO EBOOK -->
+<!-- Large modal --> 
+<div class="modal fade bd-example-modal-lg animated wow    animate__bounceIn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span class="botao-modal" aria-hidden="true">&times;</span>
             </button>
-            <h2>Baixe <br>nosso<br /> ebook</h2>
+            <h2>Baixe <br >nosso<br /> ebook</h2>
             <form action="#" method="POST">
                 <div class="row">
                     <div class="col">
-                        <div class="form-group">
+                        <div class="form-group"> 
                             <input type="text" class="form-control input-modal" id="exampleInputnome" aria-describedby="nome bnyhjg
-                            " placeholder="Nome">
+                            " placeholder="Nome"> 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-group">
-                            <input type="email" class="form-control input-modal" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email">
+                        <div class="form-group"> 
+                            <input type="email" class="form-control input-modal" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"> 
                         </div>
                     </div>
                 </div>
@@ -695,5 +789,18 @@
 <script src="js/livros.js"></script>
 <script src="js/posts.js"></script> 
 <script src="js/main.js"></script>
+<script src="js/wow.min.js" 
+integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" 
+crossorigin="anonymous">
+</script> 
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+<script src="js/video.js"></script>
+<script>
+
+   new WOW().init();
+
+</script>
 </body>
 </html>   

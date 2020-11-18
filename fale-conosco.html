@@ -7,13 +7,18 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">  
+     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">   
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" /> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css" /> 
+
 </head>
 
 <body>
-<header>
+<header class=" animated wow animate__flipInX">
 
     <!--conteudo-converse-->
     <div class="bg-conteudo-converse">
@@ -54,106 +59,128 @@
         <!-- conteudo-top --> 
      </div>  
 
-
-    <!-- navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
-        <div class="container">
-            <img src="images/home.png" alt="casinha">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="a-mepe.html">MEPE <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publique-seu-primeiro-livro.html">Publique seu livro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="meu-primeiro-livro.html">Meu Primeiro livro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="lancamentos.html">Lançamentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fale-conosco.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
+ <!-- navbar-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+    <div class="container">
+        <img src="images/home.png" alt="casinha">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="a-mepe.html">MEPE <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publique-seu-primeiro-livro.html">Publique seu livro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="meu-primeiro-livro.html">Meu Primeiro livro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lancamentos.html">Lançamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fale-conosco.html">Contato</a>
+                </li>
+            </ul>
         </div>
-    </nav><!-- navbar-->
-
+    </div>
+</nav><!-- navbar--> 
 </header>
+
 
 
     <!-- main-->
     <div class="main">
         <!--banner-fale-conosco-->
-        <div class="banner-fale-conosco">
-            <img src="images/banner-fale-conosco.png" alt="">
+        <div class="banner-fale-conosco animated wow animate__animated animate__bounceInLeft">
+             <div class="bg-banner-fale-conosco">
+                 <div class="container">
+                   <h1 class="animated wow animate__animated animate__fadeIn">Fale conosco</h1>    
+                 </div>                              
+             </div> 
         </div>
         <!--banner-fale-conosco-->
         <!--Breadcrumb-->
-        <div class="breadcrumb container">
-            <ul class="breadcrumb-item">
+        <div class="breadcrumb container animated wow animate__fadeIn">
+            <ul class="breadcrumb-item breadcrumb-item-fale-conosco ">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Fale conosco</a></li>
             </ul>
         </div>
         <!--Breadcrumb-->
 
-        <div class="box-preencha container">
-            <h1>Como podemos ajudar?</h1>
-            <h2>Preencha o formulário que em breve entraremos em contato com você!</h2> 
+       <div class="container animated wow animate__animated animate__fadeInDown">
+            <div class="box-preencha">
+                <h1>Como podemos ajudar?</h1>
+                <h2>Preencha o formulário que em breve entraremos em contato com você!</h2> 
+            </div> 
+       </div>
+       
+        <div class="container">
+              <!--box-formulário-->
+                    <div class="box-formulario animated wow animate__animated animate__backInLeft">
+                        <form class="fale-conosco-form" method="post" action="#">
+                            <div class="row reset-row-col-form-fale-conosco">
+                                <div class="col-12 col-sm-6 reset-row-col-form-fale-conosco">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-fale-conosco" placeholder="Nome">
+                                    </div> 
+                                </div>
+                                <div class="col-12 col-sm-6 reset-row-col-form-fale-conosco">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-fale-conosco" placeholder="Email">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="row reset-row-col-form-fale-conosco">
+                                <div class="col-12 col-sm-6 reset-row-col-form-fale-conosco">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-fale-conosco" placeholder="Empresa">
+                                    </div> 
+                                </div>
+                                <div class="col-12 col-sm-6 reset-row-col-form-fale-conosco">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-fale-conosco" placeholder="Telefone">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="row reset-row-col-form-fale-conosco">
+                                <div class="col reset-row-col-form-fale-conosco">
+                                    <div class="form-group">
+                                        <select class="form-control  form-control-fale-conosco-select selectpicker">
+                                            <optgroup label="Interesse">
+                                               <option>Interesse</option>
+                                            </optgroup>
+                                        </select>
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row reset-row-col-form-fale-conosco">
+                                <div class="col reset-row-col-form-fale-conosco">
+                                    <div class="form-group">
+                                        <textarea class="form-control form-control-fale-conosco-textarea" id="validationTextarea" placeholder="Mensagem"></textarea>
+                                    </div>
+                                 </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary botao-fale-conosco">Enviar</button>
+                        </form>
+                    </div>
+                    <!--box-formulário-->
         </div>
-        <!--box-formulário-->
-        <div class="box-formulario container">
-            <form class="form-cometarios fale-conosco-form" method="post" action="#">
-                <div class="row">
-                    <div class="col-12 col-sm-6">
-                        <input type="text" class="form-control" placeholder="Nome">
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6">
-                        <input type="text" class="form-control" placeholder="Empresa">
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <input type="text" class="form-control" placeholder="Telefone">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <select class="form-control">
-                            <option>Interesse</option>
-                        </select>
-                    </div> 
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <textarea class="form-control campo-textarea" id="validationTextarea" placeholder="Mensagem"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary botao-fale-conosco">Enviar</button>
-            </form>
-        </div>
-        <!--box-formulário-->
 
-     <div class="container">
+     <div class="container animated wow animate__zoomInDown">
        <!-- box-outros-canais-->
        <div class="box-outros-canais">
                 <div class="outros-canais">
                     <h3>Fale conosco por outros canais</h3>
                     <ul>
-                        <li> <img src="images/email-fale.png" alt="email"> editoramepe@editora.com</li>
+                        <li class="email"> <img src="images/email-fale.png" alt="email"> editoramepe@editora.com.br</li>
                         <li> <img src="images/fixo-fone.png" alt="telefone"> 41 123456 5678</li>
                         <li> <img src="images/whats-fale.png" alt="telefone"> 41 1234562 5678</li>
                         <li> <i class="fa fa-map-marker"></i> 123 Landon Bridge<br> Street London</li>
@@ -164,7 +191,7 @@
      </div>
 
 <!--Fique por dentro-->
-<div class="fique-por-dentro-blog-interno">
+<div class="fique-por-dentro-blog-interno animated wow animate__animated animate__backInLeft">
     <div class="container">
         <form class="form-fique-por-dentro-blog-interno" method="POST" action="#">
             <div class="row">
@@ -192,17 +219,17 @@
 
     </div>
     <!-- main-->
-<!-- Footer -->
+    
+
 <!-- Footer -->
 <footer>
     <div class="container">
         <!-- box-editora-->
-        <div class="box-editora">
+        <div class="box-editora animated wow    animate__fadeInBottomRight">
             <img src="images/logo-footer.png" alt="cabeça pensante - Editora MEPE">
             <p>
-                Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia
-                norte americana,
-                que desenvolve, produz e vende automóveis
+            Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
+            que desenvolve, produz e vende automóveis 
             </p>
             <form action="#" method="post" class="fique-por-dentro">
                 <div class="form-group">
@@ -215,7 +242,7 @@
         <!-- box-editora-->
 
         <!--box-menu-->
-        <div class="box-menu">
+        <div class="box-menu animated wow    animate__fadeInDown">
             <h4>Menu</h4>
             <ul>
                 <li>
@@ -241,10 +268,10 @@
         <!--box-menu-->
 
         <!--box-contato-->
-        <div class="box-contato">
+        <div class="box-contato animated wow    animate__fadeInBottomRight">
             <h4>Entre em contato</h4>
             <ul>
-                <li> <i class="fas fa-map-marker-alt"></i> 123 Landon Bridge Street London</li>
+                <li> <img src="images/localizacao.png" alt="localizacao"> 123 Landon Bridge Street London</li>
                 <li> <img src="images/email.png" alt="email"> editoramepe@editora.com</li>
                 <li> <img src="images/fone.png" alt="telefone"> 1234 4562 212345</li>
             </ul>
@@ -260,13 +287,21 @@
                 <a href="#"><img src="images/youtube.png" alt="youtube"></a>
                 <a href="#"><img src="images/pintereste.png" alt="pintereste"></a>
                 <a href="#"><img src="images/twitter.png" alt="twitter"></a>
-            </div>
+            </div> 
         </div>
         <!--box-contato-->
 
         <!-- box-mapa-->
-        <div class="box-mapa">
-            <img src="images/mapa.png" alt="endereço">
+        <div class="box-mapa animated wow    animate__fadeInBottomRight">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7783476763407!2d-0.16339908393480077!3d51.498934879633765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053ed5bcf677%3A0xb2e004a325459022!2sLandon%20Pl%2C%20Knightsbridge%2C%20London%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1605549950462!5m2!1spt-BR!2sbr"
+             width="262" 
+             height="236" 
+             frameborder="0" 
+             style="border:0;"
+              allowfullscreen="" 
+              aria-hidden="false"
+             tabindex="0">
+            </iframe>
         </div>
         <!-- box-mapa-->
     </div>
@@ -274,28 +309,28 @@
     <div class="divisoria"></div>
 </footer>
 <!-- Footer -->
-<!-- MODAL BAIXE NOSSO EBOOK -->
-<!-- Large modal -->
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+
+ <!-- MODAL BAIXE NOSSO EBOOK -->
+<!-- Large modal --> 
+<div class="modal fade bd-example-modal-lg animated wow    animate__bounceIn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span class="botao-modal" aria-hidden="true">&times;</span>
             </button>
-            <h2>Baixe <br>nosso<br /> ebook</h2>
+            <h2>Baixe <br >nosso<br /> ebook</h2>
             <form action="#" method="POST">
                 <div class="row">
                     <div class="col">
-                        <div class="form-group">
+                        <div class="form-group"> 
                             <input type="text" class="form-control input-modal" id="exampleInputnome" aria-describedby="nome bnyhjg
-                            " placeholder="Nome">
+                            " placeholder="Nome"> 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-group">
-                            <input type="email" class="form-control input-modal" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email">
+                        <div class="form-group"> 
+                            <input type="email" class="form-control input-modal" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"> 
                         </div>
                     </div>
                 </div>
@@ -308,8 +343,22 @@
     
         <script src="js/jquery-3.2.1.slim.min.js"></script> 
         <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>  
+        <script src="dist/owl.carousel.min.js"></script> 
+        <script src="js/slick.min.js"></script>
+        <script src="js/carousel.js"></script> 
+        <script src="js/autores.js"></script>
+        <script src="js/livros.js"></script>
+        <script src="js/posts.js"></script> 
         <script src="js/main.js"></script>
-        
+        <script src="js/wow.min.js" 
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" 
+        crossorigin="anonymous">
+        </script>
+        <script>
+
+           new WOW().init();
+
+        </script>
 </body>
 </html>   

@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> 
+    <link rel="stylesheet"  href="https://vjs.zencdn.net/7.10.2/video-js.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-<header>
+<body><header class=" animated wow animate__flipInX">
 
     <!--conteudo-converse-->
     <div class="bg-conteudo-converse">
@@ -58,45 +57,44 @@
         <!-- conteudo-top --> 
      </div>  
 
-
-    <!-- navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
-        <div class="container">
-            <img src="images/home.png" alt="casinha">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="a-mepe.html">MEPE <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publique-seu-primeiro-livro.html">Publique seu livro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="meu-primeiro-livro.html">Meu Primeiro livro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="lancamentos.html">Lançamentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fale-conosco.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
+ <!-- navbar-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+    <div class="container">
+        <img src="images/home.png" alt="casinha">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="a-mepe.html">MEPE <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publique-seu-primeiro-livro.html">Publique seu livro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="meu-primeiro-livro.html">Meu Primeiro livro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lancamentos.html">Lançamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fale-conosco.html">Contato</a>
+                </li>
+            </ul>
         </div>
-    </nav><!-- navbar--> 
+    </div>
+</nav><!-- navbar--> 
 </header>
 
     <!-- main-->
     <div class="main">
         <!-- Banner-->
-        <section class="banner-amepe"> 
+        <section class="banner-amepe animated wow animate__backInLeft "> 
                <div class="bg-a-mepe">
                 <div class="container">
                     <h1>A Mepe</h1>
@@ -108,7 +106,7 @@
         </section>   
         <!-- Banner-->
         <!--Breadcrumb-->
-         <div class="breadcrumb container">
+         <div class="breadcrumb container-mepe animated wow animate__bounceInLeft">
             <ul class="breadcrumb-item">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">A Mepe</a></li>
@@ -117,7 +115,7 @@
          <!--Breadcrumb-->
 
          <!-- descricao-->
-         <section class="descricao-a-mepe container">
+         <section class="descricao-a-mepe container-mepe animated wow animate__bounceInRight">
              <div class="box-titulo">
                  <h1>Mepe</h1>
                  <h2>A Editora Mepe</h2>
@@ -141,7 +139,7 @@
          <!-- descricao-->
 
          <!--box-icone-->
-         <section class="box-icone">  
+         <section class="box-icone animated wow animate__flipInX">  
              <div class="container">
                <div class="icone">
                      <div class="box-imagem">
@@ -183,17 +181,23 @@
         <!--box-icone-->
 
          <!--box-video-->
-        <section class="box-video">
+        <section class="card-box-video animated wow animate__flipInY">
             <div class="container">
-                 <div class="video">
-                    <img src="images/video-a-mepe.png" alt="">
+                 <div class="box-video">
+                     <video id="videoPlayer" class="video-js vjs-big-play-centered" muted poster="images/video-a-mepe.png" data-setup="{}">
+                         <source src="video.mp4" type="video/mp4" />
+                         <p class="vjs-no-js">
+                             To view this video please enable Javascript, and consider upgrading o a web browser tha 
+                             <a href='https://videojs.com/html5-video-support/' target="_blank">supports HTML5 video</a> 
+                         </p>
+                     </video>
                  </div>
             </div>
         </section>
         <!--box-video-->
 
         <!--box-galeria-->
-        <section class="box-galeria">
+        <section class="box-galeria animated wow animate__zoomInDown">
             <div class="container">
                 <div class="galeria-titulo">
                     <h2>Conheça mais</h2>
@@ -218,7 +222,7 @@
         <!--box-galeria-->
         
         <!--box-seu-livro-->
-        <section class="container-a-mepe">
+        <section class="container-a-mepe animated wow animate__flipInX">
             <!--box-seu-livro-->
             <div class="box-seu-livro">
                 <div class="a-mepe-card-publique-seu-livro">
@@ -231,7 +235,7 @@
           <!--box-seu-livro-->
           <!--a-mepe-card-meu-primeiro-livro-->
                 <div class="a-mepe-card-meu-primeiro-livro">
-                       <div class="box-a-mepe-meu-primeiro-livro">
+                       <div class="box-a-mepe-meu-primeiro-livro animated wow animate__flipInY">
                             <h3>Meu primeiro livro</h3>
                             <a href="#" class="btn btn-primary botao-a-mepe-meu-primeiro-livro">veja como <strong>publicar</strong> seu livro</a> 
                        </div>
@@ -245,11 +249,12 @@
 
     </div>
     <!-- main-->
+
 <!-- Footer -->
 <footer>
     <div class="container">
         <!-- box-editora-->
-        <div class="box-editora">
+        <div class="box-editora animated wow    animate__fadeInBottomRight">
             <img src="images/logo-footer.png" alt="cabeça pensante - Editora MEPE">
             <p>
             Tesla, Inc. (antigamente Tesla Motors, Inc.), é uma empresa automotiva e de armazenamento de energia norte americana,
@@ -266,7 +271,7 @@
         <!-- box-editora-->
 
         <!--box-menu-->
-        <div class="box-menu">
+        <div class="box-menu animated wow    animate__fadeInDown">
             <h4>Menu</h4>
             <ul>
                 <li>
@@ -292,7 +297,7 @@
         <!--box-menu-->
 
         <!--box-contato-->
-        <div class="box-contato">
+        <div class="box-contato animated wow    animate__fadeInBottomRight">
             <h4>Entre em contato</h4>
             <ul>
                 <li> <img src="images/localizacao.png" alt="localizacao"> 123 Landon Bridge Street London</li>
@@ -316,15 +321,22 @@
         <!--box-contato-->
 
         <!-- box-mapa-->
-        <div class="box-mapa">
-            <img src="images/mapa.png" alt="endereço">
+        <div class="box-mapa animated wow    animate__fadeInBottomRight">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7783476763407!2d-0.16339908393480077!3d51.498934879633765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053ed5bcf677%3A0xb2e004a325459022!2sLandon%20Pl%2C%20Knightsbridge%2C%20London%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1605549950462!5m2!1spt-BR!2sbr"
+             width="262" 
+             height="236" 
+             frameborder="0" 
+             style="border:0;"
+              allowfullscreen="" 
+              aria-hidden="false"
+             tabindex="0">
+            </iframe>
         </div>
         <!-- box-mapa-->
     </div>
 
     <div class="divisoria"></div>
 </footer>
-<!-- Footer -->
 <!-- MODAL BAIXE NOSSO EBOOK -->
 <!-- Large modal -->
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -361,9 +373,22 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>  
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> 
         <script src="js/main.js"></script> 
+        <script src="js/wow.min.js" 
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" 
+        crossorigin="anonymous">
+        </script> 
+         <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+        <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+        <script src="js/video.js"></script>
+
+         <script>
+
+           new WOW().init();
+
+        </script>
         
 </body>
 </html>   
