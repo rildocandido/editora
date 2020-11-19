@@ -246,7 +246,7 @@ header{
     font-size: 1.7rem;
 }
  
- .nav-link:active, .nav-link:focus, .nav-link:hover{  
+.nav-item, .nav-link:active, .nav-link:focus, .nav-link:hover{  
     font-weight: bold;
   }
   
@@ -346,8 +346,7 @@ header{
 }
 
 .botao-banner-home-saiba-mais:hover{ 
-    background: var(--color-primary); 
-    color: var(--color-font-sub-titulo);
+    background: var(--color-primary);  
 
 }
  .banner-meu-primeiro-livro-home-fixo{
@@ -595,7 +594,9 @@ header{
 }
 
 .livro-inclinado:hover, .box-livro-padrao-carousel:hover{
-    transform: scale(1.5);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .circulo-livro-inclinado, .circulo-livro {
@@ -2040,6 +2041,11 @@ header{
 .card-titulo-aprenda-escrever h1{
     text-align: center;
     padding: 6rem 6rem 2rem 6rem;
+    font-size: 38px;
+    line-height: 34px;
+    color: #39393b;
+    font-weight: 700;
+    font-family: "Poppins";
 }
 
 .botao-conheca-vantagens{
@@ -2054,6 +2060,7 @@ header{
     align-items: center;
     margin-bottom: 2rem;
     font-size: 1.6rem;
+    margin-right: 6rem;
 }
 
 .botao-conheca-vantagens:hover{ 
@@ -2648,8 +2655,7 @@ header{
  .livro-padrao-vejanossa-loja {
      z-index: 9;
      position: relative;
- }
-
+ } 
 sup {
     margin-top: 1rem;
 }
@@ -3483,13 +3489,12 @@ select.form-control-fale-conosco-select:not([size]):not([multiple]) {
   } 
   
 .owl-carousel div img{
-    height:521px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background: red;
 }
-
+ 
+  
  
 .banner-home-top .owl-carousel .owl-nav .owl-next{ 
     margin-top: 20rem; 
@@ -4053,6 +4058,29 @@ footer .container {
 .box-a-mepe-meu-primeiro-livro  .botao-a-mepe-meu-primeiro-livro{
     margin: 2rem 0 0 4rem;
 }
+
+.livro-inclinado-a-mepe{
+    position: relative;
+    z-index: 9999;
+    margin: -5.2rem -8rem 0 0!important;
+    transform: rotate(-25deg);
+}
+.livro-padrao-a-mepe{
+    width:177px!important;
+    height: 230px!important;
+    z-index: 9;
+    position: relative;
+    margin: 1rem 0 0 -2rem!important;
+    border-radius: 0 0 1rem;
+}
+.livro-padrao-a-mepe-normal{ 
+    width: 177px!important;
+    height: 230px!important;
+    margin-top: 1rem!important;
+    border-radius: 0 0 1.5rem;
+}
+ 
+
     /**************************************************************************************************************
    Página publique seu livro
 ***************************************************************************************************************/
@@ -4298,6 +4326,27 @@ footer .container {
 .botao-publicar-publique {  
     margin: 2rem 0 0 4rem; 
 }
+
+.titulo-lancamento{
+    margin-left: 5.1rem!important; 
+    margin-bottom: 3rem!important;
+    padding-bottom: 2rem!important;
+}
+.livro-inclinado-lancamentos{
+    position: relative;
+    z-index: 9999;
+    margin: -5.2rem -9rem 0 0!important;
+    transform: rotate(-25deg);
+}  
+.livro-padrao-lancamentos{
+    width:177px!important;
+    height: 230px!important;
+    z-index: 9;
+    position: relative;
+    margin: 1rem 0 0 -3.6rem!important;
+    border-radius: 0 0 1rem;
+
+}
     /**************************************************************************************************************
    Página meu primeiro livro
 ***************************************************************************************************************/
@@ -4321,7 +4370,7 @@ footer .container {
 
 .card-titulo-aprenda-escrever h1{
     text-align: left;
-    padding: 6rem 6rem 2rem 6rem;
+    padding: 6rem 6rem 1rem 6rem;
 }
  
 
@@ -4358,6 +4407,12 @@ footer .container {
 }
   
 
+.livro-inclinado-meu-primeiro-livro{
+    position: relative;
+    z-index: 9999; 
+    margin: -3.1em -7rem 0 0!important;
+    transform: rotate(-35deg);
+}
     /**************************************************************************************************************
    Página lancamento
 ***************************************************************************************************************/
